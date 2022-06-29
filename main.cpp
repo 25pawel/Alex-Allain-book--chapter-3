@@ -5,11 +5,13 @@ using namespace std;
 
 static void printGivenName(void);
 static void calcAndPrintSumOfTwoNumbers(void);
+static void calcAndPrintDivisionOfTwoNumbers(void);
 
 int main()
 {
     printGivenName();
     calcAndPrintSumOfTwoNumbers();
+    calcAndPrintDivisionOfTwoNumbers();
 
     return 0;
 }
@@ -35,5 +37,20 @@ static void calcAndPrintSumOfTwoNumbers(void)
     cout << "Enter second number: ";
     cin >> number2;
 
-    cout << "Sum of numbers is: " << number1 + number2;
+    cout << "Sum of numbers is: " << (number1 + number2) << "\n";
 }
+
+static void calcAndPrintDivisionOfTwoNumbers(void)
+{
+    double number1 = 0;
+    double number2 = 0;
+
+    cout << "Enter first number: ";
+    cin >> number1;
+
+    cout << "Enter second number: ";
+    cin >> number2;
+
+    cout << "Sum of numbers is: " << (number1 / number2);
+}
+
